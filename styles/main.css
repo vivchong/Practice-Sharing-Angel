@@ -6,8 +6,8 @@ classes are denotedby '.'
 */
 
 body {
-	background-color: #fffcde;
-	font-family: 'Roboto', sans-serif;
+	background-color: #FAF7FF;
+	font-family: 'Public Sans', sans-serif;
 }
 
 #main {
@@ -19,8 +19,27 @@ body {
 	padding: 24px;
 }
 
+h1 {
+	color: #7371FC;
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 800;
+}
+
+.text-container {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+
 #profile {
 	text-align: center;
+}
+
+#profile:hover {
+	background-color: #ffffff;
 }
 
 #profile-pic {
@@ -29,3 +48,4 @@ body {
 	height: 200px;
 	margin: auto;
 }
+

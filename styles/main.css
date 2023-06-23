@@ -25,6 +25,7 @@ h1 {
 	font-weight: 800;
 }
 
+
 .text-container {
 	display: flex;
 	gap: 12px;
@@ -32,6 +33,8 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 }
+
+
 
 
 #profile {
@@ -49,3 +52,32 @@ h1 {
 	margin: auto;
 }
 
+.figure {
+    position: relative;
+    width: 360px; /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+  }
+  .figure img.profile-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .figure:hover img.profile-hover {
+    opacity: 1;
+  }
+
+
+  .card {
+	width: 130px;
+	height: 195px;
+	background: url("/examples/images/card-back.jpg") no-repeat;
+	margin: 50px;
+}
+.card:hover {
+	background: url("/examples/images/card-front.jpg") no-repeat;
+}
